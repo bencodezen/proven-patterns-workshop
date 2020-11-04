@@ -1,16 +1,25 @@
 <template>
   <h1>Counter</h1>
   <p>{{ currentCount }}</p>
-  <button @click="incrementCount">Increment</button>
+  <p>{{ doubleCount }}</p>
+  <button @click="incrementCount2">Increment</button>
   <button @click="decrementCount">Decrement</button>
 </template>
 
 <script>
+import createCounter from './features/createCounter.js'
+
 export default {
   name: 'App',
-  data: () => ({
-    currentCount: 0
-  }),
+  setup() {
+    const { currentCount, doubleCount, incrementCount2 } = createCounter
+
+    return {
+      currentCount,
+      doubleCount,
+      incrementCount2
+    }
+  },
   methods: {
     incrementCount() {
       this.currentCount += 1
