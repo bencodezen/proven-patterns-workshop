@@ -1,23 +1,19 @@
-<template>
-  <div class="home">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <DynamicHeading :level="1">Hello VueConf.US 2021!</DynamicHeading>
-    <HelloWorld msg="Welcome to Your Vue.js 3 App" />
-  </div>
-</template>
-
 <script>
-import DynamicHeading from './components/DynamicHeading.vue'
-import HelloWorld from './components/HelloWorld.vue'
+import BItems from './components/BItems.vue'
+import FavoriteItems from './components/FavoriteItems.vue'
 
 export default {
-  name: 'App',
   components: {
-    DynamicHeading,
-    HelloWorld
+    BItems,
+    FavoriteItems
   }
 }
 </script>
+
+<template>
+  <FavoriteItems />
+  <BItems />
+</template>
 
 <style>
 #app {
