@@ -1,32 +1,17 @@
 <template>
-  <h1>Counter</h1>
-  <p>{{ currentCount }}</p>
-  <p>{{ doubleCount }}</p>
-  <button @click="incrementCount2">Increment</button>
-  <button @click="decrementCount">Decrement</button>
+  <div class="home">
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <HelloWorld msg="Welcome to Your Vue.js App" />
+  </div>
 </template>
 
 <script>
-import createCounter from './features/createCounter.js'
+import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  setup() {
-    const { currentCount, doubleCount, incrementCount2 } = createCounter
-
-    return {
-      currentCount,
-      doubleCount,
-      incrementCount2
-    }
-  },
-  methods: {
-    incrementCount() {
-      this.currentCount += 1
-    },
-    decrementCount() {
-      this.currentCount -= 1
-    }
+  components: {
+    HelloWorld
   }
 }
 </script>
