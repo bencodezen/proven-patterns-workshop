@@ -22,6 +22,6 @@ const addNewItemToList = () => {
   favoriteItemStore.favoriteItems.push(favoriteItemStore.userInput)
 }
 
-export default () => {
+export default () => ({
   favoriteItemStore, addNewItemToList
-}
+})
