@@ -1,16 +1,18 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { count, incrementCount } from '@/composables/useCountSingleton'
+import useCountFactory from '@/composables/useCountFactory'
 
-const doubleCount = computed(() => count.value * 2)
+const countFactory = useCountFactory()
+
+const doubleCount = computed(() => countFactory.count.value * 2)
 </script>
 
 <template>
   <div>
     <h1>Counter #1</h1>
-    <p>Count: {{ count }}</p>
+    <p>Count: {{ countFactory.count }}</p>
     <p>Double Count: {{ doubleCount }}</p>
-    <button @click="incrementCount">Increment</button>
+    <button @click="countFactory.incrementCount">Increment</button>
   </div>
 </template>
 
