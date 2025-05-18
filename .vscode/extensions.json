@@ -2,7 +2,7 @@
   "recommendations": [
     // Vue - Official Extension
     // https://github.com/vuejs/language-tools
-    "vue.volar",
+    "Vue.volar",
 
     // Format-on-save with Prettier
     // https://github.com/prettier/prettier-vscode
@@ -20,8 +20,9 @@
     // https://github.com/ChristianKohler/PathIntellisense
     "christian-kohler.path-intellisense",
 
-    // Peacock - Workspace Color Customizer
-    // https://github.com/johnpapa/vscode-peacock
-    "johnpapa.vscode-peacock"
+    "vitest.explorer",
+    "ms-playwright.playwright",
+    "dbaeumer.vscode-eslint",
+    "EditorConfig.EditorConfig"
   ]
 }

@@ -14,7 +14,12 @@ dist-ssr
 coverage
 *.local
 
+/cypress/videos/
+/cypress/screenshots/
+
 # Editor directories and files
+.vscode/*
+!.vscode/extensions.json
 .idea
 *.suo
 *.ntvs*
@@ -22,6 +27,7 @@ coverage
 *.sln
 *.sw?
 
-# Playwright directories
+*.tsbuildinfo
+
 test-results/
 playwright-report/
