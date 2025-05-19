@@ -1,6 +1,5 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-import { createHead } from '@unhead/vue'
 
 import App from '@/App.vue'
 import router from '@/router/index'
@@ -18,7 +17,5 @@ app.use(router)
 
 /** Unhead **/
 /** https://unhead.unjs.io/ **/
-const head = createHead()
-app.use(head)
 
 app.mount('#app')
