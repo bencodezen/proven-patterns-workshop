@@ -1,11 +1,7 @@
-<template>
-  <button>
-    <slot> Hello VueConfUS! </slot>
-  </button>
-</template>
+<template src="./BaseButton.html"></template>
 
 <script>
 export default {}
 </script>
 
-<style module></style>
+<style></style>
