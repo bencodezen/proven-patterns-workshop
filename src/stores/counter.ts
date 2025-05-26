@@ -8,5 +8,11 @@ export const useCounterStore = defineStore('counter', () => {
     count.value++
   }
 
+  const dataList = [{
+    id: 1,
+    name: 'Ben'
+    hobby: 'pickleball'
+  }]
+
   return { count, doubleCount, increment }
 })

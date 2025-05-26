@@ -7,7 +7,9 @@ import { addIngredient, ingredientList, useRamenList } from '@/composables/useKi
   <button @click="addIngredient('Ginger')">Add ginger</button>
   <table>
     <thead>
-      <th>Name</th>
+      <tr>
+        <th>Name</th>
+      </tr>
     </thead>
     <tbody>
       <tr v-for="(ingredient, index) in ingredientList" :key="index">
