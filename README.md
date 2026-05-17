@@ -32,11 +32,15 @@ pnpm build
 
 ### Run Unit Tests with [Vitest](https://vitest.dev/)
 
+Unit tests use the `.unit.ts` suffix.
+
 ```sh
 pnpm test:unit
 ```
 
 ### Run End-to-End Tests with [Playwright](https://playwright.dev)
+
+End-to-end tests use the `.e2e.ts` suffix.
 
 ```sh
 # Install browsers for the first run
@@ -50,7 +54,7 @@ pnpm test:e2e
 # Runs the tests only on Chromium
 pnpm test:e2e --project=chromium
 # Runs the tests of a specific file
-pnpm test:e2e tests/example.spec.ts
+pnpm test:e2e e2e/vue.e2e.ts
 # Runs the tests in debug mode
 pnpm test:e2e --debug
 ```
