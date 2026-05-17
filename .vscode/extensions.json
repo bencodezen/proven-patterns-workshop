@@ -4,10 +4,6 @@
     // https://github.com/vuejs/language-tools
     "Vue.volar",
 
-    // Format-on-save with Prettier
-    // https://github.com/prettier/prettier-vscode
-    "esbenp.prettier-vscode",
-
     // Playwright Test - Official Extension
     // https://github.com/microsoft/playwright-vscode
     "ms-playwright.playwright",
@@ -21,8 +17,10 @@
     "christian-kohler.path-intellisense",
 
     "vitest.explorer",
-    "ms-playwright.playwright",
     "dbaeumer.vscode-eslint",
-    "EditorConfig.EditorConfig"
+    "EditorConfig.EditorConfig",
+    "dbaeumer.vscode-eslint",
+    "EditorConfig.EditorConfig",
+    "oxc.oxc-vscode"
   ]
 }
